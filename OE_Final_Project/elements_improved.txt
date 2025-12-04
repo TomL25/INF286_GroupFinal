@@ -1,0 +1,10 @@
+- Simplified navigation menu
+- reduced number of cities listed
+- same text size and font throughout the website
+- shortened paragraph descriptipons
+- reduced call to actions
+- the website will look good and not cluttered on a mobile device
+- the gallery page is now working properly
+- minimal information in the footer, non repeated information
+- perfect contrast for reading in the Hero Section
+- consistent buttons throughoout the website
