@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>OE Decks</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+<style>
+
+/* BODY AND THEME */
+body { 
+  background-color: #35454F; 
+  color: #f1f1f1;
+  scroll-behavior: smooth;
+}
+.navbar-brand, .nav-link:hover { color:#60ac53 !important; }
+.btn-primary { 
+  background-color:#60ac53; 
+  border-color:#60ac53; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(96,172,83,0.6);
+}
+
+/* HERO SECTION */
+.hero {
+  background: url(Deck2.png) center/cover no-repeat;
+  background-attachment: fixed;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 0 2px 6px rgba(0,0,0,0.7);
+}
+
+/* SECTIONS */
+section { 
+  padding: 80px 0; 
+}
+.fade-in { 
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: 0.8s ease-out; 
+}
+.fade-in.visible { 
+  opacity: 1; 
+  transform: translateY(0px); 
+}
+
+/* NAVBAR */
+.custom-navbar {
+    background-color: #3a3a3a;
+}
+
+/* FORM STYLING */
+form {
+  background-color: #3a3a3a;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.form-control, .form-select, textarea {
+  background-color: #4a4a4a;
+  color: #f1f1f1;
+  border: 1px solid #666;
+}
+.form-control::placeholder {
+  color: #ccc;
+}
+.form-control:focus, .form-select:focus, textarea:focus {
+  border-color: #60ac53;
+  box-shadow: 0 0 10px rgba(96,172,83,0.6);
+}
+
+/* FOOTER */
+footer {
+  background-color: #1c1c1c;
+  color: #f1f1f1;
+  padding: 40px 0;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark custom-navbar py-3">
+<div class="container">
+<a class="navbar-brand fw-bold" href="#home">OE Decks</a>
+<a href="tel:+9379009409" class="btn btn-outline-success ms-3 d-none d-lg-inline-block">
+  Call Us: (937) 400-9409
+</a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#home-form">Start Your Project</a></li>
+<li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+<li class="nav-item"><a class="nav-link" href="aboutUs.html">About Us</a></li>
+<li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="Testimonial.html">Testimonial</a></li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HOME SECTION -->
+<section id="home" class="hero text-center fade-in">
+<div>
+<h1 class="display-3 fw-bold">Premier Deck Builder & Outdoor Living Specialist</h1>
+<p class="lead mt-3">OE Decks — Your Trusted Deck Construction Experts In The Greater Cincinnati Area</p>
+<a href="#home-form" class="btn btn-primary btn-lg mt-4">Start Your Project</a>
+</div>
+</section>
+
+<!-- HOME FORM SECTION -->
+<section id="home-form" class="fade-in">
+<div class="container">
+<h2 class="text-center mb-4" style="color:#60ac53;">Start Your Project</h2>
+<div class="row justify-content-center">
+<div class="col-lg-6">
+<form class="p-4 border rounded shadow-sm">
+<div class="mb-3">
+<label class="form-label">Name</label>
+<input type="text" class="form-control" placeholder="Enter your name" required />
+</div>
+
+<div class="mb-3">
+<label class="form-label">Phone Number</label>
+<input type="tel" class="form-control" placeholder="Enter your phone number" required />
+</div>
+
+<div class="mb-3">
+<label class="form-label">Servicve</label>
+<select class="form-select" id="location" required>
+<option value="" disabled selected>What do you want to have done</option>
+<option value="Deck">Deck</option>
+<option value="Fence">Fence</option>
+<option value="Outdoor Living">Outdoor Living</option>
+<option value="Pergola">Pergola</option>
+<option value="Poch">Porch</option>
+<option value="Pacilion & Gazebo">Pavilion & Gazebo</option>
+</select>
+</div>
+
+<div class="mb-3">
+<label class="form-label">Location / Address</label>
+<select class="form-select" id="location" required>
+<option value="" disabled selected>Select your location</option>
+<option value="Bexley, OH">Bexley, OH</option>
+<option value="Blue Ash, OH">Blue Ash, OH</option>
+<option value="Cheviot, OH">Cheviot, OH</option>
+<option value="Cincinnati, OH">Cincinnati, OH</option>
+<option value="Coldstream, OH">Coldstream, OH</option>
+<option value="Columbus, OH">Columbus, OH</option>
+<option value="Deer Park, OH">Deer Park, OH</option>
+<option value="Dry Run, OH">Dry Run, OH</option>
+<option value="Dublin, OH">Dublin, OH</option>
+<option value="Fairborn, OH">Fairborn, OH</option>
+<option value="Fairfield, OH">Fairfield, OH</option>
+<option value="Middletown, OH">Middletown, OH</option>
+<option value="Waynesville, OH">Waynesville, OH</option>
+<option value="Wilmington, OH">Wilmington, OH</option>
+<option value="Yellow Springs, OH">Yellow Springs, OH</option>
+<option value="Springfield, OH">Springfield, OH</option>
+<option value="West Chester, OH">West Chester, OH</option>
+<option value="Spring Valley, OH">Spring Valley, OH</option>
+<option value="Forest Park, OH">Forest Park, OH</option>
+<option value="Harrison, OH">Harrison, OH</option>
+<option value="Hilliard, OH">Hilliard, OH</option>
+<option value="Indian Hill, OH">Indian Hill, OH</option>
+<option value="Loveland, OH">Loveland, OH</option>
+<option value="Madeira, OH">Madeira, OH</option>
+<option value="Milford, OH">Milford, OH</option>
+<option value="Mount Healthy, OH">Mount Healthy, OH</option>
+<option value="New Albany, OH">New Albany, OH</option>
+<option value="North College Hill, OH">North College Hill, OH</option>
+<option value="Norwood, OH">Norwood, OH</option>
+<option value="Powell, OH">Powell, OH</option>
+<option value="Oxford, OH">Oxford, OH</option>
+<option value="Bellbrook, OH">Bellbrook, OH</option>
+<option value="Butler, OH">Butler, OH</option>
+<option value="Clark, OH">Clark, OH</option>
+<option value="Clinton, OH">Clinton, OH</option>
+<option value="Dayton, OH">Dayton, OH</option>
+<option value="Delaware, OH">Delaware, OH</option>
+<option value="Fayette, OH">Fayette, OH</option>
+<option value="Franklin, OH">Franklin, OH</option>
+<option value="Greene, OH">Greene, OH</option>
+<option value="Hamilton, OH">Hamilton, OH</option>
+<option value="Highland, OH">Highland, OH</option>
+<option value="Lebanon, OH">Lebanon, OH</option>
+<option value="Madison, OH">Madison, OH</option>
+<option value="Maineville, OH">Maineville, OH</option>
+<option value="Mason, OH">Mason, OH</option>
+<option value="Miamisburg, OH">Miamisburg, OH</option>
+<option value="Montgomery, OH">Montgomery, OH</option>
+<option value="Pickaway, OH">Pickaway, OH</option>
+<option value="Ross, OH">Ross, OH</option>
+<option value="South Lebanon, OH">South Lebanon, OH</option>
+<option value="Springboro, OH">Springboro, OH</option>
+<option value="Warren, OH">Warren, OH</option>
+<option value="Monroe, Ohio, OH">Monroe, Ohio, OH</option>
+<option value="Morrow, OH">Morrow, OH</option>
+<option value="Xenia, OH">Xenia, OH</option>
+<option value="Reading, OH">Reading, OH</option>
+<option value="Sharonville, OH">Sharonville, OH</option>
+<option value="Springdale, OH">Springdale, OH</option>
+<option value="Terrace Park, OH">Terrace Park, OH</option>
+<option value="Washington Court House, OH">Washington Court House, OH</option>
+<option value="Westerville, OH">Westerville, OH</option>
+<option value="Worthington, OH">Worthington, OH</option>
+<option value="Wyoming, OH">Wyoming, OH</option>
+<option value="Other">Other</option>
+</select>
+</div>
+
+<div class="d-grid">
+<button type="submit" class="btn btn-primary btn-lg">Get a Quote</button>
+</div>
+
+</form>
+</div>
+</div>
+</div>
+</section>
+
+<!-- TESTIMONIALS SECTION -->
+<section id="testimonials">
+<div class="container">
+<h2 class="text-center mb-5" style="color:#60ac53;">What Our Clients Say</h2>
+<div class="row">
+  <div class="col-md-6">
+    <div class="testimonial-card p-4 mb-4 rounded shadow" style="background-color:#3a3a3a;">
+      <h5>John D.</h5>
+      <p>"OE Decks transformed our backyard! The team was professional and on time. Highly recommend!"</p>
+      <p style="color:#FFD700;">★★★★★</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="testimonial-card p-4 mb-4 rounded shadow" style="background-color:#3a3a3a;">
+      <h5>Sarah P.</h5>
+      <p>"Beautiful custom deck built exactly how we envisioned. Excellent craftsmanship."</p>
+      <p style="color:#FFD700;">★★★★★</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="testimonial-card p-4 mb-4 rounded shadow" style="background-color:#3a3a3a;">
+      <h5>Mike L.</h5>
+      <p>"Amazing service and quality work. Our pergola looks incredible!"</p>
+      <p style="color:#FFD700;">★★★★★</p>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <div class="testimonial-card p-4 mb-4 rounded shadow" style="background-color:#3a3a3a;">
+      <h5>Emily R.</h5>
+      <p>"Professional team, great communication, and stunning deck finish. Very happy!"</p>
+      <p style="color:#FFD700;">★★★★★</p>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<!--FOOTER -->
+<footer class="text-center mt-5">
+<p>&copy; 2025 OE Decks. All Rights Reserved.</p>
+</footer>
+
+<!-- BOOTSTRAP JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!--JS -->
+<script>
+
+const faders = document.querySelectorAll('.fade-in');
+const appearOnScroll = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+        }
+    });
+});
+faders.forEach(el => appearOnScroll.observe(el));
+</script>
+</body>
+</html>
